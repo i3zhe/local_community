@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @shop.name %>
+</p>
+
+<p>
+  <b>Slogan:</b>
+  <%= @shop.slogan %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @shop.address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @shop.description %>
+</p>
+
+<p>
+  <b>Logo:</b>
+  <%= @shop.logo %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @shop.weight %>
+</p>
+
+<%= render @shop.comments %>
+
+<h2>Add a comment:</h2>
+
+<%= render "comments/form" %>
+
+<%= link_to 'Edit', edit_shop_path(@shop) %> |
+<%= link_to 'Back', shops_path %>

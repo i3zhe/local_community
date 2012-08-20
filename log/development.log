@@ -1,0 +1,1769 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (64.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (133.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateShops (20120814140104)
+  [1m[35m (100.4ms)[0m  CREATE TABLE `shops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `slogan` varchar(255), `address` text, `description` text, `logo` varchar(255), `weight` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120814140104')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-14 22:13:06 +0800
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-14 22:33:03 +0800
+
+ActionController::RoutingError (uninitialized constant ShopController):
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3111449731745670682__call__3910143832622988569__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-14 22:33:50 +0800
+
+ActionController::RoutingError (uninitialized constant ShopController):
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3111449731745670682__call__3910143832622988569__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-14 22:34:32 +0800
+Connecting to database specified by database.yml
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` [0m
+  Rendered shops/index.html.erb within layouts/application (1.8ms)
+Compiled scaffolds.css  (13ms)  (pid 79468)
+Compiled shops.css  (1ms)  (pid 79468)
+Compiled application.css  (41ms)  (pid 79468)
+Compiled jquery.js  (2ms)  (pid 79468)
+Compiled jquery_ujs.js  (0ms)  (pid 79468)
+Compiled shops.js  (271ms)  (pid 79468)
+Compiled application.js  (297ms)  (pid 79468)
+Completed 200 OK in 455ms (Views: 424.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-14 22:34:33 +0800
+Served asset /shops.css - 200 OK (3ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-14 22:34:33 +0800
+Served asset /shops.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 22:34:33 +0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 22:34:33 +0800
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-14 22:34:33 +0800
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 22:34:33 +0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 22:34:33 +0800
+Served asset /application.js - 200 OK (19ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` 
+  Rendered shops/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 22:39:36 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 21:14:37 +0800
+Connecting to database specified by database.yml
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` [0m
+  Rendered shops/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 191ms (Views: 112.0ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 21:14:38 +0800
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 21:14:38 +0800
+Served asset /shops.js - 200 OK (2ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 21:14:38 +0800
+Served asset /shops.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 21:14:38 +0800
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 21:14:38 +0800
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 21:14:38 +0800
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 21:14:38 +0800
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/shops/new" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Processing by ShopsController#new as HTML
+  Rendered shops/_form.html.erb (61.7ms)
+  Rendered shops/new.html.erb within layouts/application (76.1ms)
+Completed 200 OK in 112ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 21:15:36 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "shop"=>{"name"=>"割烹清水", "slogan"=>"装逼的日本料理", "address"=>"康派B座", "description"=>"test", "logo"=>"", "weight"=>""}, "commit"=>"Create Shop"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `shops` (`address`, `created_at`, `description`, `logo`, `name`, `slogan`, `updated_at`, `weight`) VALUES ('康派B座', '2012-08-16 13:17:02', 'test', '', '割烹清水', '装逼的日本料理', '2012-08-16 13:17:02', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops/1
+Completed 302 Found in 46ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:02 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` 
+  Rendered shops/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:05 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 21:17:15 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1.json" for 127.0.0.1 at 2012-08-16 21:17:21 +0800
+Processing by ShopsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 21:23:31 +0800
+Connecting to database specified by database.yml
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` [0m
+  Rendered shops/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 636435ms (Views: 24.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/shops/1/edit" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Processing by ShopsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.3ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered shops/_form.html.erb (8.9ms)
+  Rendered shops/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Served asset /shops.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Served asset /shops.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 21:34:07 +0800
+Served asset /application.js - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateShops (20120814140104)
+Migrating to CreateComments (20120816140309)
+  [1m[35m (63.0ms)[0m  CREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `commenter` varchar(255), `body` text, `shop_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (230.6ms)[0m  [1mCREATE INDEX `index_comments_on_shop_id` ON `comments` (`shop_id`)[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120816140309')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/shops/1/edit" for 127.0.0.1 at 2012-08-16 22:19:37 +0800
+Connecting to database specified by database.yml
+Processing by ShopsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/_form.html.erb (7.3ms)
+  Rendered shops/edit.html.erb within layouts/application (11.5ms)
+Compiled comments.css  (30ms)  (pid 1063)
+Compiled application.css  (36ms)  (pid 1063)
+Compiled comments.js  (309ms)  (pid 1063)
+Compiled application.js  (318ms)  (pid 1063)
+Completed 200 OK in 525ms (Views: 485.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /comments.css - 200 OK (1ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /shops.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /comments.js - 200 OK (1ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /shops.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:38 +0800
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2012-08-16 22:19:42 +0800
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.3ms)[0m  SELECT `shops`.* FROM `shops` 
+  Rendered shops/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5241ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:19:47 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:19:51 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/show.html.erb within layouts/application (33.4ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    31: </p>
+    32: 
+    33: <h2>Add a comment:</h2>
+    34: <%= form_for ([@post, @post.comments.build]) do |f| %>
+    35:   <div class="field">
+    36:     <%= f.label "Your name", :commenter %> <br />
+    37:     <%= f.text_field :commenter %>
+  app/views/shops/show.html.erb:34:in `_app_views_shops_show_html_erb__2998814718033762932_70223165733960'
+  app/controllers/shops_controller.rb:18:in `show'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered shops/show.html.erb within layouts/application (68.4ms)
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:21:30 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 30ms (Views: 16.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:35:29 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:36:03 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"not having a try yet"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant CommentsController::Post):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:36:18 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"not having a try yet"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant CommentsController::Post):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:36:45 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"not having a try yet"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant CommentsController::Post):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered shops/show.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 37ms (Views: 13.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:37:06 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:37:31 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"not having a try yet"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant CommentsController::Post):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:38:20 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"not having a try yet"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Shop without an ID):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:38:32 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"not having a try yet"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Shop without an ID):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/show.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 43ms (Views: 16.7ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:38:36 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:38:48 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"1231232"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Shop without an ID):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (23.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.4ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:39:12 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"1231232"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Shop without an ID):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:39:15 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered shops/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 27ms (Views: 13.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:39:16 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:39:21 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"12313123"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Shop without an ID):
+  app/controllers/comments_controller.rb:3:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"12313123"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `comments` (`body`, `commenter`, `created_at`, `shop_id`, `updated_at`) VALUES ('12313123', 'jerry', '2012-08-16 14:40:19', 1, '2012-08-16 14:40:19')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops/1
+Completed 302 Found in 40ms (ActiveRecord: 15.8ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:40:19 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:40:50 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"22"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `comments` (`body`, `commenter`, `created_at`, `shop_id`, `updated_at`) VALUES ('22', 'jerry', '2012-08-16 14:40:50', 1, '2012-08-16 14:40:50')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 72ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"shops"}):
+  app/controllers/comments_controller.rb:5:in `create'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/shops/1/comments" for 127.0.0.1 at 2012-08-16 22:41:23 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iaYEKt2BEZ/BrcFYsFeXgcoO4s8r44EVHCA5gJnh9Yw=", "comment"=>{"commenter"=>"jerry", "body"=>"22"}, "commit"=>"Create Comment", "shop_id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `comments` (`body`, `commenter`, `created_at`, `shop_id`, `updated_at`) VALUES ('22', 'jerry', '2012-08-16 14:41:23', 1, '2012-08-16 14:41:23')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops/1
+Completed 302 Found in 30ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-16 22:41:23 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.3ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered shops/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 22:41:23 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 22:41:23 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-16 22:41:23 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-16 22:41:23 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 22:41:23 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-16 22:41:24 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-16 22:41:24 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-16 22:41:24 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 22:41:24 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 21:54:25 +0800
+Connecting to database specified by database.yml
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` [0m
+  Rendered shops/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10381ms (Views: 174.9ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /shops.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /shops.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:36 +0800
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 21:54:56 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.3ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered shops/show.html.erb within layouts/application (194.0ms)
+Completed 200 OK in 200ms (Views: 145.4ms | ActiveRecord: 53.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 21:54:57 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 21:56:28 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered shops/show.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Missing partial shops/comment, application/comment with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/user/Sites/Commnunity/app/views"
+):
+    30:   <%= @shop.weight %>
+    31: </p>
+    32: 
+    33: <%=  render 'comment' %>
+    34: 
+    35: <h2>Add a comment:</h2>
+    36: <%= form_for ([@shop, @shop.comments.build]) do |f| %>
+  app/views/shops/show.html.erb:33:in `_app_views_shops_show_html_erb__1556848428091418346_70199272346700'
+  app/controllers/shops_controller.rb:18:in `show'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 22:00:22 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.3ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered comments/_comment.html.erb (21.3ms)
+  Rendered shops/show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 22:00:23 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (2.3ms)
+  Rendered comments/_form.html.erb (23.8ms)
+  Rendered shops/show.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:53 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered comments/_comment.html.erb (2.1ms)
+  Rendered comments/_form.html.erb (1.3ms)
+  Rendered shops/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:54 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (2.0ms)
+  Rendered comments/_form.html.erb (1.2ms)
+  Rendered shops/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:55 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered comments/_comment.html.erb (1.9ms)
+  Rendered comments/_form.html.erb (1.2ms)
+  Rendered shops/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 22:04:56 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/shops/1/comments/3" for 127.0.0.1 at 2012-08-17 22:05:01 +0800
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nAxCe3xivBIR1B86f1GzQn3qhcouG3fXk/RheNJEyls=", "shop_id"=>"1", "id"=>"3"}
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Comment without an ID):
+  app/controllers/comments_controller.rb:10:in `destroy'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started DELETE "/shops/1/comments/3" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nAxCe3xivBIR1B86f1GzQn3qhcouG3fXk/RheNJEyls=", "shop_id"=>"1", "id"=>"3"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1 AND `comments`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `comments` WHERE `comments`.`id` = 3[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops/1
+Completed 302 Found in 46ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered comments/_comment.html.erb (3.0ms)
+  Rendered comments/_form.html.erb (1.4ms)
+  Rendered shops/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:40 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/shops/1/comments/2" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nAxCe3xivBIR1B86f1GzQn3qhcouG3fXk/RheNJEyls=", "shop_id"=>"1", "id"=>"2"}
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1 AND `comments`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `comments` WHERE `comments`.`id` = 2
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops/1
+Completed 302 Found in 3ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/shops/1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.2ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 1 LIMIT 1
+  Rendered comments/_comment.html.erb (1.3ms)
+  Rendered comments/_form.html.erb (1.4ms)
+  Rendered shops/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 22:05:45 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-21 05:26:16 +0800
+Connecting to database specified by database.yml
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` [0m
+  Rendered shops/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 8931ms (Views: 170.6ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /shops.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /shops.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:26 +0800
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/shops/new" for 127.0.0.1 at 2012-08-21 05:26:52 +0800
+Processing by ShopsController#new as HTML
+Filter chain halted as #<Proc:0x007fcea3e95a60@/Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/http_authentication.rb:112> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shops/new" for 127.0.0.1 at 2012-08-21 05:26:58 +0800
+Processing by ShopsController#new as HTML
+  Rendered shops/_form.html.erb (67.9ms)
+  Rendered shops/new.html.erb within layouts/application (92.3ms)
+Completed 200 OK in 106ms (Views: 96.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:58 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:58 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:58 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:58 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-21 05:26:59 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:59 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:59 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:59 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-21 05:26:59 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hVDA9uSpfJir/Ln+X7/ZcE/6/WMCe/8naJX1Ig6YG7s=", "shop"=>{"name"=>"法式西点", "slogan"=>"做你钟爱的味道", "address"=>"康派A座123号", "description"=>"小资风情哦～", "logo"=>"", "weight"=>""}, "commit"=>"Create Shop"}
+Filter chain halted as #<Proc:0x007fcea3e95a60@/Users/user/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/http_authentication.rb:112> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/shops" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hVDA9uSpfJir/Ln+X7/ZcE/6/WMCe/8naJX1Ig6YG7s=", "shop"=>{"name"=>"法式西点", "slogan"=>"做你钟爱的味道", "address"=>"康派A座123号", "description"=>"小资风情哦～", "logo"=>"", "weight"=>""}, "commit"=>"Create Shop"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `shops` (`address`, `created_at`, `description`, `logo`, `name`, `slogan`, `updated_at`, `weight`) VALUES ('康派A座123号', '2012-08-20 21:27:37', '小资风情哦～', '', '法式西点', '做你钟爱的味道', '2012-08-20 21:27:37', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops/2
+Completed 302 Found in 45ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/shops/2" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 2 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 2
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (20.4ms)
+  Rendered shops/show.html.erb within layouts/application (137.9ms)
+Completed 200 OK in 144ms (Views: 101.4ms | ActiveRecord: 40.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-21 05:27:37 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/shops/2/comments" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hVDA9uSpfJir/Ln+X7/ZcE/6/WMCe/8naJX1Ig6YG7s=", "comment"=>{"commenter"=>"guest01", "body"=>"还没有来过哟，好像试试哈～"}, "commit"=>"Create Comment", "shop_id"=>"2"}
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `comments` (`body`, `commenter`, `created_at`, `shop_id`, `updated_at`) VALUES ('还没有来过哟，好像试试哈～', 'guest01', '2012-08-20 21:28:13', 2, '2012-08-20 21:28:13')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops/2
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/shops/2" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 2 LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`shop_id` = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `shops`.* FROM `shops` WHERE `shops`.`id` = 2 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (18.8ms)
+  Rendered comments/_form.html.erb (1.7ms)
+  Rendered shops/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /shops.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /shops.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-21 05:28:13 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateShops (20120814140104)
+Migrating to CreateComments (20120816140309)
+Migrating to CreateTags (20120820213005)
+  [1m[35m (85.6ms)[0m  CREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `shop_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (198.3ms)[0m  [1mCREATE INDEX `index_tags_on_shop_id` ON `tags` (`shop_id`)[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120820213005')
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
