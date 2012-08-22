@@ -1,4 +1,4 @@
-<%= @shop.tags.build %>
+<% @shop.tags.build %>
 <%= form_for(@shop) do |f| %>
   <% if @shop.errors.any? %>
     <div id="error_explanation">
@@ -39,7 +39,7 @@
 
   <h2>Tags</h2>
   <%= render :partial =>  "tags/form",
-             :locals => f
+             :locals => {:form => f}
   %>
 
   <div class="actions">

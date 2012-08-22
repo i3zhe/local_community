@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p id='foo' style="border:2px dotted">
   <b>Name:</b>
   <%= @shop.name %>
 </p>
@@ -30,6 +30,12 @@
   <%= @shop.weight %>
 </p>
 
+<p>
+ <b>Tags:</b>
+ <%= join_tags(@shop) %>
+</p>
+
+<h2>Comments</h2>
 <%= render @shop.comments %>
 
 <h2>Add a comment:</h2>

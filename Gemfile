@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
+
 gem 'pry'
 gem 'pry-nav'
 
