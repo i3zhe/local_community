@@ -1,0 +1,25 @@
+<div id="recommend_shops">
+	<ul>
+	<% @recommend_shops.each do |s| %>
+		<li>
+			<div class="recommend_shop">
+				<%= s.name %>
+			</div>
+		</li>
+	<% end %>
+	</ul>
+</div>
+
+<div id="hot-items">
+	<ul>
+	<% @hot_items.each do |s| %>	
+		<li>
+			<div class="hot_item">
+				<%= i.name %>
+			</div>
+		</li>
+	<% end %>
+	</ul>
+</div>
+
+

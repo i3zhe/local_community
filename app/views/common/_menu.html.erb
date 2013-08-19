@@ -1,0 +1,14 @@
+<ul class="nav">
+  <li><%= link_to "首页", root_path %></li>
+  <li><a href="/about">探索发现</a></li>
+  <li><a href="/about">求购</a></li>
+</ul>
+<ul class="nav pull-right">
+<% if current_user %>
+	<li><%= link_to "Edit account", edit_user_registration_path(current_user) %></a></li>
+	<li><a href="users/sign_out">Logout</a></li>
+<% else %>
+	<li><a href="users/sign_in">Sign in</a></li>
+	<li><a href="users/sign_up">Sign up</a></li>
+<% end %>		
+</ul>
