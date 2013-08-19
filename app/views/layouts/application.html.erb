@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Community</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title><%= content_for?(:title) ? yield(:title) : "真心贴心的社区" %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">爱上家</a>
+      <%= render :partial => 'common/menu' %>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="content">
+    <div class="page-header">
+      <%= render :partial => 'common/header' %>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <%= render :partial => 'common/flashes' %>
+        <%= yield %>
+      </div>
+    </div>
+    <footer>
+    	<%= render :partial => 'common/footer' %>
+    </footer>
+  </div>
+</div>
+
 
 </body>
 </html>

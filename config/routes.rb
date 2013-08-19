@@ -1,8 +1,13 @@
 Blog::Application.routes.draw do
+  devise_for :users
+
   resources :shops do
     resources :comments
   end
 
+  resources :items
+
+  match 'recommends' => 'shops#recommends', :as => 'recommends'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

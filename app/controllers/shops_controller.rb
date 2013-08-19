@@ -1,7 +1,9 @@
+# coding: utf-8
 class ShopsController < ApplicationController
-  http_basic_authenticate_with :name => 'jerry', :password => '123', :except => [:index, :show]
+  # before_filter :authenticate_user!, :only => [:recommends]  
   # GET /shops
   # GET /shops.json
+
   def index
     @shops = Shop.all
     # binding.pry
@@ -11,11 +13,23 @@ class ShopsController < ApplicationController
     end
   end
 
+  # TODO: make this 1 at beginning, and 3 afterwards
+  def recommends
+    @recommend_shops = Shop.recommend_shops
+    @hot_items = Item.hot_items
+    @title = "推荐商店"
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => @recommend_shops }
+    end
+  end
+
   # GET /shops/1
   # GET /shops/1.json
   def show
     @shop = Shop.find(params[:id])
-
+    # binding.pry
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @shop }

@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
 gem 'mysql2'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,12 +21,28 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'less-rails-bootstrap'
 
 gem 'therubyracer'
-gem 'less-rails-bootstrap'
+
+gem 'simple_form'
+gem 'show_for'
 
 gem 'pry'
 gem 'pry-nav'
+
+gem 'guard-rspec'
+
+gem 'rspec-rails', :group => [:development, :test]
+gem 'factory_girl_rails', :group => [:development, :test]
+
+group :test do	
+	gem "rspec-cells", '0.1.7'
+  gem "capybara", "~> 0.4.1"
+  gem "cucumber-rails", :require => false
+  gem "database_cleaner"
+  gem "email_spec"
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
